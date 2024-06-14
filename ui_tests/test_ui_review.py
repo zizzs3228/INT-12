@@ -2,7 +2,7 @@ import allure
 from conftest import BASE_URL
 
 @allure.feature('UI Tests')
-@allure.story('User Registration')
+@allure.story('Adding review')
 def test_ui_register_login(page):
     page.goto(BASE_URL)
     page.click('a[href="/product_details/2"]')

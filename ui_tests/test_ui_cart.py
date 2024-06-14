@@ -2,7 +2,7 @@ import allure
 from conftest import BASE_URL
 
 @allure.feature('UI Tests')
-@allure.story('User Registration')
+@allure.story('Cart manipulations')
 def test_ui_register_login(page):
     page.goto(BASE_URL+'/view_cart')
     assert page.locator('b', has_text='Cart is empty!').is_visible()

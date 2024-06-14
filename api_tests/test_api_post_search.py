@@ -4,8 +4,8 @@ import json
 from conftest import BASE_URL
 
 
-@allure.feature('UI Tests')
-@allure.story('User Registration')
+@allure.feature('API Tests')
+@allure.story('Post search')
 def test_api_get_brands():
     r = requests.post(BASE_URL+'/api/searchProduct')
     assert r.status_code == 200

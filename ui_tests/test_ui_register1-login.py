@@ -2,7 +2,7 @@ import allure
 from conftest import BASE_URL
 
 @allure.feature('UI Tests')
-@allure.story('User Registration')
+@allure.story('User login')
 def test_ui_register_login(page,email,password):
     page.goto(BASE_URL+'/logout')
     page.goto(BASE_URL+'/login')

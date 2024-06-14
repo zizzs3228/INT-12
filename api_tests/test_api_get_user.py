@@ -4,8 +4,8 @@ import json
 from conftest import BASE_URL
 
 
-@allure.feature('UI Tests')
-@allure.story('User Registration')
+@allure.feature('API Tests')
+@allure.story('Get user')
 def test_api_get_brands():
     data = {'email': 'asdfasdf@mail.com', 'password':'asdfasdfasdf'}
     r = requests.post(BASE_URL+'/api/verifyLogin',data=data)
