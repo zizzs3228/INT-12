@@ -9,4 +9,4 @@ def test_ui_register_login(page,email,password):
     page.fill('form[action="/login"] input[name="email"]',email)
     page.fill('form[action="/login"] input[name="password"]',password)
     page.click('form[action="/login"] button')
-    assert page.get_by_text("Logged in as").is_visible()
+    assert page.locator('a',has_text="Logged in as").is_visible()
